@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Przewóz osób i wynajem autokarów Wyszków - FORTUNA-BUS</title>
+<meta name="description" content="FORTUNA-BUS z Wyszkowa: przewóz osób od 1993 roku, wynajem autokarów dla szkół i firm, autokary i limuzyna na wesela. Tel. 604 277 796.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/saira-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-tel-720.webp" media="(max-width:760px)">
+<link rel="preload" as="image" imagesrcset="img/hero-960.webp 960w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" imagesizes="100vw" media="(min-width:761px)">
+<style>
+@font-face{font-family:"Saira";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/saira-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Saira";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/saira-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--blue:#347FC2;--navy:#243082;--purple:#802175;--deep:#141B4D;--ink:#141A33;--muted:#4A5170;--gray:#F1F4F9;--line:#DCE2EE;--max:1200px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.6 "Archivo",system-ui,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Saira",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4vw,46px);font-weight:750;color:var(--navy)}
+h3{font-size:22px;font-weight:700}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:4px;font:700 17px/1 "Saira",sans-serif;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-main{background:var(--blue);color:#fff}
+.btn-main:hover{background:#2A6CAB}
+.btn-line{border-color:rgba(255,255,255,.75);color:#fff}
+.btn-line:hover{background:#fff;color:var(--navy)}
+.btn svg{width:18px;height:18px}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:1320px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{width:52px;height:36px}
+.logo span{font:800 23px/1 "Saira",sans-serif;color:var(--navy);transform:skewX(-14deg);letter-spacing:.01em;white-space:nowrap}
+.menu{display:flex;gap:28px;align-items:center}
+.menu a{text-decoration:none;font:600 16px/1 "Saira",sans-serif;color:var(--ink)}
+.menu a:hover{color:var(--blue)}
+.menu .tel{display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;padding:12px 18px;border-radius:4px}
+.menu .tel:hover{background:var(--blue);color:#fff}
+.burger{display:none;background:none;border:0;width:46px;height:46px;padding:11px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--navy);margin:6px 0;transition:transform .2s,opacity .2s}
+
+/* pierwszy ekran */
+.hero-frame{background:var(--deep)}
+.hero{position:relative;max-width:2112px;margin:0 auto;min-height:calc(100svh - 68px);display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,20,60,.78) 0%,rgba(14,20,60,.5) 38%,rgba(14,20,60,0) 62%)}
+.hero .wrap{position:relative;z-index:2;width:100%;max-width:1320px}
+.hero-txt{max-width:600px;padding:48px 0}
+.hero h1{font-size:clamp(36px,4.6vw,62px);font-weight:780}
+.hero h1 small{display:block;font-size:.5em;font-weight:600;margin-top:14px;color:#CFE2F5;letter-spacing:0}
+.hero p{margin-top:22px;font-size:19px;color:#E8EEF8;max-width:520px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.blades{display:flex;gap:6px;margin-bottom:22px}
+.blades svg{width:58px;height:40px}
+
+/* pas faktow */
+.fakty{background:var(--navy);color:#fff}
+.fakty ul{list-style:none;margin:0 auto;padding:0 22px;max-width:1320px;display:grid;grid-template-columns:repeat(4,1fr)}
+.fakty li{padding:24px 20px 24px 0;border-right:1px solid rgba(255,255,255,.16);margin-right:20px}
+.fakty li:last-child{border:0;margin:0}
+.fakty b{display:block;font:750 26px/1.1 "Saira",sans-serif}
+.fakty span{font-size:15px;color:#C9D4EE}
+
+/* sekcje */
+section{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
+.sec-head p{max-width:540px;color:var(--muted);margin-top:14px}
+.mark{display:block;width:44px;height:30px;margin-bottom:16px}
+
+/* oferta */
+.oferta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.karta{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.karta .foto{aspect-ratio:4/3;overflow:hidden}
+.karta .foto img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.karta:hover .foto img{transform:scale(1.04)}
+.karta .tresc{padding:22px 22px 26px;border-top:4px solid var(--c,var(--blue));flex:1}
+.karta h3{color:var(--navy);margin-bottom:10px}
+.karta p{color:var(--muted);font-size:16px}
+
+/* linie - ciemna sekcja */
+.linie{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.linie h2{color:#fff}
+.linie .sec-head p{color:#C9D4EE}
+.linie-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.trasa{margin:0 0 34px}
+.trasa h3{font-size:18px;color:#8FC0EC;margin-bottom:18px;font-weight:600}
+.przystanki{list-style:none;margin:0;padding:0;display:flex;position:relative}
+.przystanki::before{content:"";position:absolute;left:9px;right:9px;top:9px;height:4px;background:linear-gradient(90deg,var(--purple),var(--blue))}
+.przystanki li{flex:1;position:relative;padding-top:34px;font:700 18px/1.2 "Saira",sans-serif}
+.przystanki li::before{content:"";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--deep);border:4px solid var(--blue)}
+.przystanki li:last-child{flex:0 0 auto;text-align:right}
+.przystanki li:last-child::before{left:auto;right:0}
+.przystanki li.duzy::before{background:#fff}
+.linie .foto-linii{border-radius:6px;overflow:hidden}
+.linie .info{margin-top:8px;padding:22px 24px;border-left:4px solid var(--blue);background:rgba(255,255,255,.06);color:#E1E8F5}
+.linie .info a{color:#fff;font-weight:700}
+
+/* flota - karuzela */
+.flota{background:var(--gray)}
+.rail-wrap{position:relative}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(300px,380px);gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 22px 18px;scroll-padding:0 22px;scrollbar-width:none;cursor:grab;max-width:1320px;margin:0 auto}
+.rail::-webkit-scrollbar{display:none}
+.rail.drag{cursor:grabbing;scroll-snap-type:none}
+.rail.drag *{pointer-events:none}
+.auto{scroll-snap-align:start;background:#fff;border-radius:6px;overflow:hidden;border:1px solid var(--line);user-select:none}
+.auto .foto{aspect-ratio:4/3;overflow:hidden;background:#dfe5ef}
+.auto .foto img{width:100%;height:100%;object-fit:cover}
+.auto .tresc{padding:20px 22px 24px}
+.auto .miejsca{display:inline-block;font:700 15px/1 "Saira",sans-serif;color:#fff;background:var(--navy);padding:7px 10px;border-radius:3px;margin-bottom:12px}
+.auto h3{color:var(--navy);margin-bottom:8px}
+.auto p{font-size:15.5px;color:var(--muted)}
+.strzalki{display:flex;gap:10px}
+.strzalki button{width:50px;height:50px;border-radius:50%;border:2px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer;display:grid;place-items:center}
+.strzalki button:hover{background:var(--navy);color:#fff}
+.strzalki svg{width:20px;height:20px}
+
+/* wyposazenie */
+.wyp-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.wyp-foto{display:grid;grid-template-columns:1.3fr 1fr;gap:14px}
+.wyp-foto img{border-radius:6px;width:100%;height:100%;object-fit:cover}
+.wyp-foto img:first-child{grid-row:span 2}
+.lista{list-style:none;margin:28px 0 0;padding:0;columns:2;column-gap:28px}
+.lista li{break-inside:avoid;padding:10px 0 10px 30px;position:relative;border-bottom:1px solid var(--line);font-size:16px}
+.lista li::before{content:"";position:absolute;left:0;top:15px;width:18px;height:12px;background:var(--blue);clip-path:path("M0 0 A9 9 0 0 0 18 12 A12 12 0 0 1 0 0Z")}
+.wyp-txt>p{color:var(--muted);margin-top:16px}
+
+/* wesela */
+.wesela{padding:0;background:#fff}
+.wesela-in{display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.wesela .foto{position:relative;min-height:340px}
+.wesela .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wesela .txt{background:var(--gray);padding:80px 7%;display:flex;flex-direction:column;justify-content:center}
+.wesela .txt p{color:var(--muted);margin-top:16px;max-width:520px}
+.wesela .txt .btn{align-self:flex-start;margin-top:28px}
+
+/* kontakt */
+.kontakt-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
+.dane{list-style:none;margin:28px 0 0;padding:0}
+.dane li{padding:16px 0;border-bottom:1px solid var(--line)}
+.dane small{display:block;color:var(--muted);font-size:14px}
+.dane a,.dane strong{font:700 21px/1.3 "Saira",sans-serif;text-decoration:none;color:var(--navy)}
+.dane a:hover{color:var(--blue)}
+form{background:var(--gray);padding:34px;border-radius:6px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--muted)}
+form .pelne{grid-column:1/-1}
+input,select,textarea{font:16px/1.4 "Archivo",sans-serif;padding:13px 14px;border:1px solid #C7D0E0;border-radius:4px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:0;border-color:var(--blue)}
+textarea{min-height:120px;resize:vertical}
+form .btn{border:0;cursor:pointer;justify-self:start}
+.mapa{margin-top:56px;height:360px;border-radius:6px;overflow:hidden;background:var(--gray)}
+.mapa iframe{width:100%;height:100%;border:0}
+
+/* stopka */
+footer{background:var(--deep);color:#B9C4E2;padding:56px 0 30px;font-size:15px}
+.stopka-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+footer h4{font:700 16px/1.2 "Saira",sans-serif;color:#fff;margin:0 0 12px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:6px 0}
+footer .logo span{color:#fff}
+.stopka-dol{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1100px){
+  .oferta-grid{grid-template-columns:repeat(2,1fr)}
+  .menu{gap:20px}
+}
+@media (max-width:900px){
+  .burger{display:block}
+  .menu{position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 22px 22px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(20,27,77,.12);transform:translateY(-120%);transition:transform .25s;z-index:-1}
+  .menu a{padding:16px 0;border-bottom:1px solid var(--line);font-size:18px}
+  .menu .tel{margin-top:16px;justify-content:center;border:0;padding:16px}
+  .top.open .menu{transform:none}
+  .top.open .burger i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .top.open .burger i:nth-child(2){opacity:0}
+  .top.open .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .linie-grid,.wyp-grid,.kontakt-grid,.wesela-in{grid-template-columns:1fr}
+  .wyp-grid{gap:36px}
+  .fakty ul{grid-template-columns:1fr 1fr}
+  .fakty li{border-right:0;margin-right:0;border-bottom:1px solid rgba(255,255,255,.16);padding:18px 10px 18px 0}
+  .fakty li:nth-last-child(-n+2){border-bottom:0}
+  .stopka-grid{grid-template-columns:1fr 1fr}
+  .stopka-grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  section{padding:64px 0}
+  .wrap{padding:0 18px}
+  .hero{min-height:calc(100svh - 68px);flex-direction:column;align-items:stretch;background:#0E143C}
+  .hero picture{position:relative;inset:auto;flex:1 1 auto;min-height:210px;height:auto}
+  .hero picture img{object-position:50% 50%}
+  .hero picture::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,20,60,0) 55%,#0E143C 100%)}
+  .hero::after{display:none}
+  .hero .wrap{margin-top:-46px}
+  .hero-txt{padding:0 0 26px}
+  .blades{display:none}
+  .hero h1{font-size:clamp(29px,8.2vw,36px)}
+  .hero h1 small{font-size:.56em;margin-top:10px}
+  .hero p{font-size:16px;margin-top:14px}
+  .hero .cta{margin-top:24px;gap:10px}
+  .hero .cta .btn{flex:1 1 100%;min-height:50px}
+  .sec-head{flex-direction:column;align-items:flex-start;margin-bottom:28px}
+  .oferta-grid{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:82%;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -18px;padding:0 18px 10px;scroll-padding:0 18px;scrollbar-width:none}
+  .oferta-grid::-webkit-scrollbar{display:none}
+  .karta{scroll-snap-align:start}
+  .rail{grid-auto-columns:82%;padding:4px 18px 14px;scroll-padding:0 18px;gap:14px}
+  .strzalki{display:none}
+  .przystanki li{font-size:15px}
+  .lista{columns:1}
+  .wesela .txt{padding:56px 18px}
+  form{grid-template-columns:1fr;padding:22px}
+  .mapa{height:300px;margin-top:40px}
+  .logo span{font-size:20px}
+  .logo svg{width:44px;height:30px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="znak" viewBox="0 0 104 70">
+      <path fill="#802175" d="M5 26A24 24 0 0 0 32 55A70 70 0 0 1 5 26Z"/>
+      <path fill="#243082" d="M49 2A30 30 0 0 0 39 55A90 90 0 0 1 49 2Z"/>
+      <path fill="#347FC2" d="M45 61A38 38 0 0 1 100 22A130 130 0 0 0 45 61Z"/>
+      <path fill="#347FC2" d="M5 64A14 14 0 0 0 28 61A45 45 0 0 1 5 64Z"/>
+    </symbol>
+    <symbol id="tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="str" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="FORTUNA-BUS, strona główna"><svg aria-hidden="true"><use href="#znak"/></svg><span>FORTUNA - BUS</span></a>
+    <nav class="menu" id="menu">
+      <a href="#oferta">Oferta</a>
+      <a href="#linie">Linie regularne</a>
+      <a href="#flota">Flota</a>
+      <a href="#wesela">Wesela</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="tel" href="tel:+48604277796"><svg width="18" height="18" aria-hidden="true"><use href="#tel"/></svg>604 277 796</a>
+    </nav>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+<div class="hero-frame">
+<section class="hero" style="padding:0">
+  <picture>
+    <source media="(max-width:760px)" srcset="img/hero-tel-480.webp 480w, img/hero-tel-720.webp 720w, img/hero-tel-960.webp 960w" sizes="100vw">
+    <img src="img/hero-1440.webp" srcset="img/hero-960.webp 960w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" sizes="100vw" width="1920" height="1440" alt="Autokar FORTUNA-BUS z tabliczką Wyszków na tle Stadionu Narodowego w Warszawie" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <div class="hero-txt">
+      <div class="blades" aria-hidden="true"><svg><use href="#znak"/></svg></div>
+      <h1>Przewóz osób i wynajem autokarów z Wyszkowa<small>W drodze między Wyszkowem a Warszawą od 1993 roku</small></h1>
+      <p>Wozimy pasażerów na liniach regularnych, wynajmujemy autokary szkołom i firmom, a na ślub podstawiamy limuzynę z kierowcą.</p>
+      <div class="cta">
+        <a class="btn btn-main" href="#kontakt">Zapytaj o wynajem<svg aria-hidden="true"><use href="#str"/></svg></a>
+        <a class="btn btn-line" href="tel:+48604277796"><svg aria-hidden="true"><use href="#tel"/></svg>604 277 796</a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="fakty">
+  <ul>
+    <li><b>od 1993</b><span>przewozimy pasażerów</span></li>
+    <li><b>47-53 miejsca</b><span>w każdym z naszych autokarów</span></li>
+    <li><b>BMW 520d</b><span>limuzyna do ślubu i dla firm</span></li>
+    <li><b>Wyszków</b><span>ul. Radosna 16</span></li>
+  </ul>
+</div>
+
+<section id="oferta">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <svg class="mark" aria-hidden="true"><use href="#znak"/></svg>
+        <h2>Dokąd jedziemy?</h2>
+        <p>Każdy kurs zaczyna się od rozmowy. Cenę wynajmu ustalamy indywidualnie, zależnie od trasy, liczby kilometrów i czasu wynajmu.</p>
+      </div>
+    </div>
+    <div class="oferta-grid">
+      <article class="karta" style="--c:#243082">
+        <div class="foto"><img src="img/lider-600.webp" width="600" height="450" alt="Autokar Autosan Lider" loading="lazy"></div>
+        <div class="tresc"><h3>Linie regularne</h3><p>Od początku działalności wozimy pasażerów na trasach Lubiel Nowy - Wyszków - Warszawa oraz Warszawa - Wyszków - Komorowo - Rząśnik.</p></div>
+      </article>
+      <article class="karta" style="--c:#347FC2">
+        <div class="foto"><img src="img/wnetrze-600.webp" width="600" height="450" alt="Wnętrze autokaru z fotelami i pasami bezpieczeństwa" loading="lazy"></div>
+        <div class="tresc"><h3>Wycieczki szkolne</h3><p>Szkoły, przedszkola i uczelnie. Autokary sprawne i czyste, przy każdym fotelu pasy, a do tego ABS, ESP i ASR.</p></div>
+      </article>
+      <article class="karta" style="--c:#802175">
+        <div class="foto"><img src="img/bova13-600.webp" width="600" height="450" alt="Autokar Bova Futura wieczorem" loading="lazy"></div>
+        <div class="tresc"><h3>Wyjazdy firmowe</h3><p>Konferencje, szkolenia, wyjazdy integracyjne. Obsługujemy firmy, instytucje i urzędy: od limuzyny po autokar.</p></div>
+      </article>
+      <article class="karta" style="--c:#347FC2">
+        <div class="foto"><img src="img/bmw-slub-600.webp" width="600" height="450" alt="Czarne BMW przystrojone do ślubu" loading="lazy"></div>
+        <div class="tresc"><h3>Wesela i imprezy</h3><p>Limuzyna do ślubu i autokar dla gości. Wieczory panieńskie, kawalerskie, studniówki i imprezy okolicznościowe.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="linie" id="linie">
+  <div class="wrap">
+    <div class="linie-grid">
+      <div>
+        <svg class="mark" aria-hidden="true"><use href="#znak"/></svg>
+        <h2>Nasze linie</h2>
+        <div class="sec-head" style="margin-bottom:34px"><p>Tymi trasami jeździmy od początku działalności firmy.</p></div>
+        <div class="trasa">
+          <h3>Linia 1</h3>
+          <ol class="przystanki"><li>Lubiel Nowy</li><li class="duzy">Wyszków</li><li>Warszawa</li></ol>
+        </div>
+        <div class="trasa">
+          <h3>Linia 2</h3>
+          <ol class="przystanki"><li>Warszawa</li><li class="duzy">Wyszków</li><li>Komorowo</li><li>Rząśnik</li></ol>
+        </div>
+        <p class="info">Godziny odjazdów i ceny biletów: zadzwoń pod <a href="tel:+48604277796">604 277 796</a> albo <a href="tel:+48698937869">698 937 869</a>.</p>
+      </div>
+      <div class="foto-linii">
+        <img src="img/lider-stadion-900.webp" srcset="img/lider-stadion-600.webp 600w, img/lider-stadion-900.webp 900w, img/lider-stadion-1400.webp 1400w" sizes="(max-width:900px) 100vw, 520px" width="900" height="430" alt="Autokar Autosan Lider przy Stadionie Narodowym" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="flota" id="flota">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <svg class="mark" aria-hidden="true"><use href="#znak"/></svg>
+        <h2>Flota</h2>
+        <p>Pięć autokarów turystycznych i limuzyna. Przesuń, żeby zobaczyć wszystkie.</p>
+      </div>
+      <div class="strzalki">
+        <button type="button" data-kier="-1" aria-label="Poprzednie"><svg style="transform:scaleX(-1)"><use href="#str"/></svg></button>
+        <button type="button" data-kier="1" aria-label="Następne"><svg><use href="#str"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="rail-wrap">
+    <div class="rail" id="rail">
+      <article class="auto"><div class="foto"><img src="img/bova13-przod-600.webp" width="600" height="450" alt="Bova Futura F13-380" loading="lazy" draggable="false"></div><div class="tresc"><span class="miejsca">48 + 1 + 1</span><h3>Bova Futura F13-380</h3><p>Luźno rozstawione fotele z pełną regulacją. Toaleta, barek kawowy, dwie lodówki, audio-video, duży bagażnik.</p></div></article>
+      <article class="auto"><div class="foto"><img src="img/bova12-600.webp" width="600" height="450" alt="Bova Futura F12-340" loading="lazy" draggable="false"></div><div class="tresc"><span class="miejsca">53 + 1 + 1</span><h3>Bova Futura F12-340</h3><p>Dużo miejsc siedzących i bardzo duża przestrzeń bagażowa. Toaleta, klimatyzacja, pasy bezpieczeństwa.</p></div></article>
+      <article class="auto"><div class="foto"><img src="img/renault-600.webp" width="600" height="450" alt="Renault Iliade w barwach FORTUNA-BUS" loading="lazy" draggable="false"></div><div class="tresc"><span class="miejsca">53 + 1 + 1</span><h3>Renault Iliade</h3><p>Komfortowy autokar turystyczny z toaletą, barkiem kawowym i dwiema lodówkami.</p></div></article>
+      <article class="auto"><div class="foto"><img src="img/lider-600.webp" width="600" height="450" alt="Autosan A1012T Lider" loading="lazy" draggable="false"></div><div class="tresc"><span class="miejsca">47 + 1 + 1</span><h3>Autosan A1012T Lider (2 szt.)</h3><p>Wysokie, w pełni regulowane fotele, wygodne także dla bardzo wysokich pasażerów. Linie międzymiastowe i wycieczki.</p></div></article>
+      <article class="auto"><div class="foto"><img src="img/bmw-600.webp" width="600" height="450" alt="Limuzyna BMW 520d F10" loading="lazy" draggable="false"></div><div class="tresc"><span class="miejsca">limuzyna</span><h3>BMW 520d F10</h3><p>Auto klasy premium: dwustrefowa klimatyzacja, elektrycznie regulowane fotele, nawigacja. Do ślubu i dla gości firm.</p></div></article>
+      <article class="auto"><div class="foto"><img src="img/renault-wnetrze-600.webp" width="600" height="450" alt="Wnętrze autokaru Renault Iliade" loading="lazy" draggable="false"></div><div class="tresc"><span class="miejsca">wnętrze</span><h3>Fotele z regulacją</h3><p>Stoliczki, siateczki, podnóżki, indywidualne oświetlenie i nawiewy przy każdym miejscu.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="wyposazenie">
+  <div class="wrap">
+    <div class="wyp-grid">
+      <div class="wyp-foto">
+        <img src="img/wnetrze-900.webp" width="900" height="675" alt="Niebieskie fotele w autokarze Bova" loading="lazy">
+        <img src="img/wnetrze2-600.webp" width="600" height="450" alt="Rzędy foteli w autokarze" loading="lazy">
+        <img src="img/bova13-600.webp" width="600" height="450" alt="Autokar FORTUNA-BUS" loading="lazy">
+      </div>
+      <div class="wyp-txt">
+        <svg class="mark" aria-hidden="true"><use href="#znak"/></svg>
+        <h2>Na pokładzie</h2>
+        <p>Za kierownicą siedzą kierowcy z wieloletnim doświadczeniem. Na wszystkie usługi mamy wymagane certyfikaty i licencje.</p>
+        <ul class="lista">
+          <li>pasy bezpieczeństwa</li>
+          <li>klimatyzacja</li>
+          <li>bezpłatne Wi-Fi</li>
+          <li>toaleta</li>
+          <li>lodówka i barek</li>
+          <li>audio-video, monitory, DVD</li>
+          <li>fotele rozsuwane na boki</li>
+          <li>mikrofon dla pilota</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wesela" id="wesela">
+  <div class="wesela-in">
+    <div class="foto"><img src="img/slub-audi-900.webp" srcset="img/slub-audi-600.webp 600w, img/slub-audi-900.webp 900w, img/slub-audi-1200.webp 1200w" sizes="(max-width:900px) 100vw, 50vw" width="900" height="599" alt="Samochód do ślubu pod bramą z balonów" loading="lazy"></div>
+    <div class="txt">
+      <svg class="mark" aria-hidden="true"><use href="#znak"/></svg>
+      <h2>Na ślub i wesele</h2>
+      <p>Para młoda jedzie limuzyną, goście autokarem, a wszyscy wracają bezpiecznie. Kierowca ubiorem i zachowaniem dopasuje się do charakteru uroczystości.</p>
+      <p>Do każdego klienta podchodzimy indywidualnie: ustalamy trasę, godziny i przebieg całego dnia.</p>
+      <a class="btn btn-main" href="#kontakt">Zapytaj o termin<svg aria-hidden="true"><use href="#str"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="kontakt-grid">
+      <div>
+        <svg class="mark" aria-hidden="true"><use href="#znak"/></svg>
+        <h2>Kontakt</h2>
+        <p style="color:var(--muted);margin-top:14px">Napisz, dokąd i kiedy chcesz jechać, ilu będzie pasażerów. Odpowiemy z wyceną.</p>
+        <ul class="dane">
+          <li><small>Telefon</small><a href="tel:+48604277796">604 277 796</a><br><a href="tel:+48698937869">698 937 869</a><br><a href="tel:+48513592979">513 592 979</a></li>
+          <li><small>E-mail</small><a href="mailto:fortuna.bus@gmail.com">fortuna.bus@gmail.com</a></li>
+          <li><small>Adres</small><strong>ul. Radosna 16, 07-200 Wyszków</strong></li>
+        </ul>
+      </div>
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Dziękujemy, to formularz pokazowy'">
+        <label>Imię i nazwisko<input name="imie" autocomplete="name"></label>
+        <label>Telefon<input name="tel" type="tel" autocomplete="tel"></label>
+        <label>Rodzaj przejazdu<select name="rodzaj"><option>Wycieczka szkolna</option><option>Wyjazd firmowy</option><option>Wesele / impreza</option><option>Limuzyna</option><option>Inny</option></select></label>
+        <label>Liczba osób<input name="osoby" inputmode="numeric"></label>
+        <label class="pelne">Trasa, data i szczegóły<textarea name="tresc"></textarea></label>
+        <button class="btn btn-main pelne" type="submit">Wyślij zapytanie</button>
+      </form>
+    </div>
+    <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Radosna+16,+07-200+Wyszk%C3%B3w&amp;output=embed"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="stopka-grid">
+      <div>
+        <a class="logo" href="#"><svg aria-hidden="true"><use href="#znak"/></svg><span>FORTUNA - BUS</span></a>
+        <p style="margin-top:16px;max-width:360px">Usługi transportowe, przewóz osób. Linie regularne, wynajem autokarów i limuzyn. Wyszków, od 1993 roku.</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul><li><a href="tel:+48604277796">604 277 796</a></li><li><a href="tel:+48698937869">698 937 869</a></li><li><a href="tel:+48513592979">513 592 979</a></li><li><a href="mailto:fortuna.bus@gmail.com">fortuna.bus@gmail.com</a></li></ul>
+      </div>
+      <div>
+        <h4>Adres</h4>
+        <ul><li>ul. Radosna 16</li><li>07-200 Wyszków</li><li><a href="https://web.facebook.com/Fortuna-BUS-1355209461189681/" rel="noopener">Facebook</a></li></ul>
+      </div>
+    </div>
+    <div class="stopka-dol">
+      <span>&copy; 2026 FORTUNA-BUS</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=fortuna-bus.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top'),b=top.querySelector('.burger');
+  b.addEventListener('click',function(){var o=top.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  top.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('open');b.setAttribute('aria-expanded','false')})});
+  var r=document.getElementById('rail');
+  document.querySelectorAll('.strzalki button').forEach(function(x){x.addEventListener('click',function(){var k=r.querySelector('.auto');r.scrollBy({left:(k.offsetWidth+22)*+x.dataset.kier,behavior:'smooth'})})});
+  var d=false,sx=0,sl=0,m=0;
+  r.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;d=true;m=0;sx=e.clientX;sl=r.scrollLeft});
+  window.addEventListener('pointermove',function(e){if(!d)return;var dx=e.clientX-sx;if(Math.abs(dx)>4){m=1;r.classList.add('drag')}r.scrollLeft=sl-dx});
+  window.addEventListener('pointerup',function(){if(!d)return;d=false;r.classList.remove('drag')});
+  var mp=document.getElementById('mapa');
+  if('IntersectionObserver' in window){new IntersectionObserver(function(en,o){if(en[0].isIntersecting){mp.innerHTML='<iframe title="Mapa dojazdu: ul. Radosna 16, Wyszków" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="'+mp.dataset.src+'"></iframe>';o.disconnect()}},{rootMargin:'300px'}).observe(mp)}
+})();
+</script>
+</body>
+</html>
