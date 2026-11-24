@@ -67,7 +67,7 @@ p{margin:0}
 .fakty ul{list-style:none;margin:0 auto;padding:0 22px;max-width:1320px;display:grid;grid-template-columns:repeat(4,1fr)}
 .fakty li{padding:24px 20px 24px 0;border-right:1px solid rgba(255,255,255,.16);margin-right:20px}
 .fakty li:last-child{border:0;margin:0}
-.fakty b{display:block;font:750 26px/1.1 "Saira",sans-serif}
+.fakty b{display:block;font:750 clamp(20px,5.4vw,26px)/1.1 "Saira",sans-serif}
 .fakty span{font-size:15px;color:#C9D4EE}
 
 /* sekcje */
@@ -130,7 +130,7 @@ section{padding:96px 0}
 .wyp-foto img:first-child{grid-row:span 2}
 .lista{list-style:none;margin:28px 0 0;padding:0;columns:2;column-gap:28px}
 .lista li{break-inside:avoid;padding:10px 0 10px 30px;position:relative;border-bottom:1px solid var(--line);font-size:16px}
-.lista li::before{content:"";position:absolute;left:0;top:15px;width:18px;height:12px;background:var(--blue);clip-path:path("M0 0 A9 9 0 0 0 18 12 A12 12 0 0 1 0 0Z")}
+.lista li::before{content:"";position:absolute;left:0;top:15px;width:14px;height:14px;border-radius:50%;border:3px solid var(--blue);box-sizing:border-box}
 .wyp-txt>p{color:var(--muted);margin-top:16px}
 
 /* wesela */
@@ -187,10 +187,10 @@ footer .logo span{color:#fff}
 }
 @media (max-width:900px){
   .burger{display:block}
-  .menu{position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 22px 22px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(20,27,77,.12);transform:translateY(-120%);transition:transform .25s;z-index:-1}
+  .menu{position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 22px 22px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(20,27,77,.12);transform:translateY(-120%);visibility:hidden;transition:transform .25s,visibility .25s;z-index:-1}
   .menu a{padding:16px 0;border-bottom:1px solid var(--line);font-size:18px}
   .menu .tel{margin-top:16px;justify-content:center;border:0;padding:16px}
-  .top.open .menu{transform:none}
+  .top.open .menu{transform:none;visibility:visible}
   .top.open .burger i:nth-child(1){transform:translateY(8px) rotate(45deg)}
   .top.open .burger i:nth-child(2){opacity:0}
   .top.open .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
